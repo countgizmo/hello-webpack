@@ -1,0 +1,7 @@
+{:paths ["src/cljs"]
+ :deps {org.clojure/clojurescript {:mvn/version "1.10.516"}}
+
+ :aliases
+ {:test {:extra-paths ["test/cljs"]
+         :extra-deps {lambdaisland/kaocha {:mvn/version "0.0-418"}
+                      lambdaisland/kaocha-cljs {:mvn/version "0.0-32"}}}}}

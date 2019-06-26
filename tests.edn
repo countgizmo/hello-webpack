@@ -1,0 +1,15 @@
+#kaocha/v1
+{:tests           [{:id                    :unit-cljs
+                    :type                  :kaocha.type/cljs
+                    :test-paths            ["test/cljs" "dist"]
+                    :source-paths          ["src/cljs"]
+                    :cljs/repl-env         cljs.repl.browser/repl-env
+                    :cljs/timeout          60000
+                    :cljs/compiler-options {:npm-deps     false
+                                            :foreign-libs [{:file           "dist/index_bundle.js"
+                                                            :provides       ["react"]
+                                                            :global-exports {react     React}}]
+                                            :externs ["externs/react.ext.js"]}}]
+ :reporter        [kaocha.report/documentation]
+ :bindings        {kaocha.type.cljs/*debug* true}
+ :capture-output? true}

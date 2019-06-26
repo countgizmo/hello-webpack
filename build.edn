@@ -1,0 +1,8 @@
+{:main hello-webpack.core
+ :output-to "out/main.js"
+ :output-dir "out"
+ :npm-deps false
+ :foreign-libs [{:file "dist/index_bundle.js"
+                 :provides ["react"]
+                 :global-exports {react React}}]
+ :externs ["externs/react.ext.js"]}
