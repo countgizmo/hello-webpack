@@ -1,17 +1,18 @@
 # hello-webpack
 
-Run:
+## Run:
 
-`yarn install`
+```
+yarn install
 
-`yarn webpack`
+yarn webpack
 
-`clj -m cljs.main -co build.edn -v -c`
+clj -m cljs.main -co build.edn -v -c
 
-`clj -m cljs.main -s`
+clj -m cljs.main -s
+```
+Open localhost:9000 and check the console log.
 
-`Open localhost:9000 and check the console log.`
-
-Test:
+## Test:
 
 `clojure -A:test -m kaocha.runner unit-cljs`
