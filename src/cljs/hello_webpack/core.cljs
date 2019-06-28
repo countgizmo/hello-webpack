@@ -1,5 +1,6 @@
 (ns hello-webpack.core
-  (:require [react]))
+  (:require [react]
+            [sentry]))
 
 
 (defn dummy-fn []
@@ -7,7 +8,8 @@
 
 
 (defn react-component []
-  (.log js/console react/Component) 
+  (.log js/console react/Component)
   "hardcoded string")
 
+(.log js/console sentry)
 (react-component)
